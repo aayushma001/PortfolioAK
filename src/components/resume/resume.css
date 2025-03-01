@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0px;
+  
+    h1{
+        font-size: 60px;
+    }
+    
+    .wrapnew {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        width: 100%;
+        gap: 20px;
+        padding-bottom: 20px; 
+      }
+      
+      .wrapnew img {
+        width: 50px;
+        height: 50px;
+        /* object-fit: con  tain; */
+      }
+      
+      .wrapnew button {
+        background-color: var(--btn-color, #3498db);
+        color: var(--btn-text-color, white);
+        border: none;
+        border-radius: 20px;
+        width: 126px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+      }
+      
+      .wrapnew button:hover {
+        transform: scale(1.05);
+      }
+      
+      .wrapnew button:active {
+        transform: translateY(2px);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+      }
+      
+      
+      .copyright {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: var(--text-secondary, #95a5a6);
+        padding-top: 10px;
+        border-top: 1px solid var(--border-color, #ecf0f1);
+        width: 100%;
+        text-align: center;
+        position: relative; 
+        bottom: 0;
+      }
+  
+    img {
+      width: 30px;
+    }
+    a {
+        width: fit-content;
+        align-self: center;
+      }
+    
+      button {
+        margin-top: 25px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 20px;
+        width: 126px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+      }
+    
+      button:hover {
+        transform: scale(1.05);
+      }
+    
+      button:active {
+        transform: translateY(2px);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+      }
+  }
+  
+  .skillList {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    max-width: 26ch;
+  }
+  
+  hr {
+    width: 100px;
+    height: 1px;
+    border: none;
+    background-color: var(--text-color);
+    margin: 30px auto;
+  }
+  
+  @media (width >= 800px) {
+    .skillList {
+      max-width: fit-content;
+      gap: 30px;
+  
+      p {
+        font-size: 20px;
+      }
+    }
+  
+    hr {
+      width: 300px;
+    }
+  }
